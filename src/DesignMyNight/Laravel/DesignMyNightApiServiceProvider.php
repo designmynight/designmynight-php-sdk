@@ -16,7 +16,7 @@ class DesignMyNightApiServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $source = realpath(__DIR__ . '/../../config/designmynight.php');
+        $source = realpath(__DIR__ . '/../../../config/designmynight.php');
 
         if ($this->app instanceof LaravelApplication && $this->app->runningInConsole()) {
             $this->publishes([$source => config_path('designmynight.php')]);
