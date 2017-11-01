@@ -23,6 +23,14 @@ Then run the following command to require the library:
 $ php composer.phar require designmynight-php-sdk
 ```
 
+## Laravel
+
+Using [Laravel](https://laravel.com/)? Add the service provider in `config/app.php`:
+
+```php
+DesignMyNight/Laravel/DesignMyNightApiServiceProvider.php::class,
+```
+
 ## Basic usage of `designmynight-php-sdk` client
 
 ```php
