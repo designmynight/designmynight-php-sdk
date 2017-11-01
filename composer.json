@@ -1,0 +1,28 @@
+{
+    "name": "designmynight/designmynight-php-sdk",
+    "type": "library",
+    "description": "DesignMyNight API v4 client",
+    "homepage": "https://github.com/DesignMyNight/designmynight-php-sdk",
+    "keywords": ["designmynight"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "DesignMyNight",
+            "homepage": "https://www.designmynight.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": { "DesignMyNight\\": "src/DesignMyNight/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "DesignMyNight\\Tests\\": "test/DesignMyNight/Tests/"}
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
