@@ -5,6 +5,7 @@ namespace DesignMyNight;
 use DesignMyNight\Api\AbstractApi;
 use DesignMyNight\Api\CurrentUser;
 use DesignMyNight\Api\Users;
+use DesignMyNight\Api\Venues;
 use DesignMyNight\Exception\BadMethodCallException;
 use DesignMyNight\Exception\InvalidArgumentException;
 use GuzzleHttp\Client as GuzzleClient;
@@ -64,6 +65,11 @@ class Client
             case 'user':
             case 'users':
                 $api = new Users($this);
+                break;
+
+            case 'venue':
+            case 'venues':
+                $api = new Venues($this);
                 break;
             default:
                 throw new InvalidArgumentException(sprintf('Undefined api instance called: "%s"', $name));
