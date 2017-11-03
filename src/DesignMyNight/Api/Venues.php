@@ -1,6 +1,7 @@
 <?php
 namespace DesignMyNight\Api;
 
+use DesignMyNight\Api\AbstractApi;
 use DesignMyNight\Api\Venues\BookingAvailability;
 
 class Venues extends AbstractApi
