@@ -20,8 +20,12 @@
     "autoload": {
         "psr-4": { "DesignMyNight\\": "src/DesignMyNight/" }
     },
-    "autoload-dev": {
-        "psr-4": { "DesignMyNight\\Tests\\": "test/DesignMyNight/Tests/"}
+    "extra": {
+        "laravel": {
+            "providers": [
+                "DesignMyNight\\Laravel\\DesignMyNightApiServiceProvider"
+            ]
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true
