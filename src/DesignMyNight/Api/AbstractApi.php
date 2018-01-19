@@ -68,7 +68,6 @@ abstract class AbstractApi
         return Response::getContent($response);
     }
 
-
     /**
      * Create a JSON encoded version of an array of parameters.
      *
