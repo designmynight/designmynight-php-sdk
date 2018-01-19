@@ -3,6 +3,7 @@
 namespace DesignMyNight;
 
 use DesignMyNight\Api\AbstractApi;
+use DesignMyNight\Api\Bookings;
 use DesignMyNight\Api\CurrentUser;
 use DesignMyNight\Api\Users;
 use DesignMyNight\Api\Venues;
@@ -71,6 +72,12 @@ class Client
             case 'venues':
                 $api = new Venues($this);
                 break;
+
+            case 'booking':
+            case 'bookings':
+                $api = new Bookings($this);
+                break;
+
             default:
                 throw new InvalidArgumentException(sprintf('Undefined api instance called: "%s"', $name));
         }
