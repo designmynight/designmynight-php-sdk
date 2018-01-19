@@ -60,7 +60,7 @@ abstract class AbstractApi
                 'POST',
                 $path,
                 [
-                    'json' => $this->createJsonBody($parameters),
+                    'body' => $this->createJsonBody($parameters),
                     'headers' => $requestHeaders,
                 ]
             );
