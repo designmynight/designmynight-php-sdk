@@ -34,7 +34,7 @@ class DesignMyNightApiServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('DesignMyNight\Client', function () {
+        $this->app->singleton('DesignMyNight\Client', function () {
             $authKey = $this->generateAuthorizationHeader();
             $client = new GuzzleClient([
                 'base_uri' => $this->generateBaseUri(),
