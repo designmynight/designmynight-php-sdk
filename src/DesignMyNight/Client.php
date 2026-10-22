@@ -13,6 +13,8 @@ use GuzzleHttp\Client as GuzzleClient;
 
 class Client
 {
+    protected GuzzleClient $client;
+
     const BASE_URI = 'https://api.designmynight.com';
 
     const API_VERSION = 'v4';

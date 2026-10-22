@@ -6,8 +6,9 @@ More information can be found at [DesignMyNight API](http://developers.designmyn
 
 ## Requirements
 
-* PHP >= 7.0
-* [Guzzle](https://github.com/guzzle/guzzle) library,
+* PHP >= 8.3
+* [Guzzle](https://github.com/guzzle/guzzle) 7
+* Laravel 12 or 13 (for the service provider)
 
 ## Install
 
